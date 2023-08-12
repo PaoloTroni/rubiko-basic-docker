@@ -30,7 +30,7 @@ Sigue estos pasos para construir y lanzar un contenedor Docker con la aplicació
 
 3. Construye la imagen Docker utilizando el Dockerfile proporcionado:
 
-   `docker build -t rubiko-basic .`
+   `docker build -t rubiko-basic-docker .`
 
 4. Lanza un contenedor a partir de la imagen recién creada:
 
@@ -46,7 +46,7 @@ Sigue estos pasos para construir y lanzar un contenedor Docker con la aplicació
 
 Si prefieres utilizar Docker Compose para gestionar la aplicación, sigue estos pasos:
 
-1. Asegúrate de estar en el directorio del repositorio clonado. Mira los puntos 1 y 2 del bloque "Cómo lanzar el contenedor con Docker"
+1. Asegúrate de haber clonado el repositorio y de estar en él. Mira los puntos 1 y 2 del bloque "Cómo lanzar el contenedor con Docker"
 
 2. Ejecuta el siguiente comando para lanzar la aplicación utilizando Docker Compose:
 
