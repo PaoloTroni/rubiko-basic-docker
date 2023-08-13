@@ -1,9 +1,6 @@
 # Utiliza una imagen base de Node.js
 FROM node:18
 
-# Configuración de la variable de entorno GREETINGS
-ENV GREETINGS "Hello Rubiko Tech!"
-
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
