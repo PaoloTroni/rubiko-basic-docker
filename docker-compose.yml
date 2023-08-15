@@ -11,8 +11,17 @@ services:
     networks:
       - my_network
   curl:
+    depends_on:
+      - web
     image: curlimages/curl
-    command: ["curl", "http://web:5050/health"]
+    command:
+      [
+        "sh",
+        "-c",
+        "until curl -s http://web:5000/health; do echo 'Waiting for web service...'; sleep 2; done",
+      ]
+    networks:
+      - my_network
 
 networks:
   my_network:
